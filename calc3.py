@@ -113,7 +113,7 @@ class Interpreter(object):
         while self.current_token.type in (PLUS, MINUS):
             token = self.current_token
             if token.type == PLUS:
-                self.eat(PLUS):
+                self.eat(PLUS)
                 result = result + self.term()
             elif token.type == MINUS:
                 self.eat(MINUS)
