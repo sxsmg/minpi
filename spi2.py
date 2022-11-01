@@ -344,6 +344,7 @@ class NodeVisitor(object):
     def generic_visit(self, node):
         raise Exception('No visit_{} method'.format(type(node).__name__))
 
+
 class Interpreter(NodeVisitor):
     
     GLOBAL_SCOPE = {}
@@ -398,8 +399,8 @@ class Interpreter(NodeVisitor):
     
     def visit_NoOp(self, node):
         pass
-   
-    
+
+
     def interpret(self):
         tree = self.parser.parse()
         if tree is None:
