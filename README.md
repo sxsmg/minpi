@@ -1,2 +1,2 @@
-# tinypy
-A tiny python interpreter from scratch
+# minpi
+A high level interpreter written in python
